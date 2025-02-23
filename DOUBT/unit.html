@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Demo</title>
+    <style>
+        /* Set Root Font Size */
+        html {
+            font-size: 16px;
+        }
+
+        /* Parent Box */
+        .parent {
+            width: 50%;
+            font-size: 20px; /* Parent font size */
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        /* % Example (Relative to Parent Width) */
+        .percent-box {
+            width: 50%; /* 50% of parent width */
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        /* rem Example (Relative to Root Font Size) */
+        .rem-box {
+            font-size: 2rem; /* 2 * 16px = 32px */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* em Example (Relative to Parent Font Size) */
+        .em-box {
+            font-size: 1.5em; /* 1.5 * 20px = 30px */
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <h2>Parent Div (50% Width, Font: 20px)</h2>
+
+        <div class="percent-box">
+            % Example: Width = 50% of parent
+        </div>
+
+        <div class="rem-box">
+            rem Example: Font = 2rem (2 × Root 16px = 32px)
+        </div>
+
+        <div class="em-box">
+            em Example: Font = 1.5em (1.5 × Parent 20px = 30px)
+        </div>
+    </div>
+
+</body>
+</html>

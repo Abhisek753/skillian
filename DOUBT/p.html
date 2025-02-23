@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes & Pseudo-Elements</title>
+    <style>
+        /* 🎨 Pseudo-Classes */
+        a:hover {
+            color: red;  /* Changes color when hovered */
+        }
+
+        input:focus {
+            border: 2px solid blue; /* Adds blue border when input is focused */
+        }
+
+        p:first-child {
+            font-weight: bold; /* Styles the first <p> inside a parent */
+        }
+
+        li:nth-child(odd) {
+            background-color: rgb(160, 158, 162); /* Styles odd-numbered list items */
+        }
+
+        /* 🎨 Pseudo-Elements */
+        p::first-letter {
+            font-size: 2em;
+            color: darkblue; /* Styles the first letter of a paragraph */
+        }
+
+        p::before {
+            content: "🔥 ";
+            color: orange; /* Adds an icon before each paragraph */
+        }
+
+        p::after {
+            content: " ✨";
+            color: purple; /* Adds a symbol after each paragraph */
+        }
+        #ids::first-letter{
+            color: red;
+            font-size: large;
+        }
+        #special {
+            position: relative;
+        }
+
+        #special::before {
+            content: "🔥 ";
+            color: orange;
+            position: absolute; /* Ensure the icon doesn't affect the text */
+            top: 0;
+            left: 0;
+        }
+        #special::first-letter {
+            font-size: 3em;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Pseudo-Classes & Pseudo-Elements Example</h2>
+
+    <a href="#">Hover over me</a>  <!-- Changes color on hover -->
+
+    <br><br>
+
+    <input type="text" placeholder="Click to focus"> <!-- Changes border on focus -->
+
+    <br><br>
+
+    <div>
+        <p>First paragraph (Styled by :first-child)</p>
+        <p>Second paragraph</p>
+    </div>
+
+    <ul>
+        <li>Item 1 (Odd)</li>
+        <li>Item 2 (Even)</li>
+        <li>Item 3 (Odd)</li>
+        <li>Item 4 (Even)</li>
+    </ul>
+
+    <p>Paragraph with pseudo-elements.</p>
+<p id="special">rtrtrtrtrt</p>
+</body>
+</html>

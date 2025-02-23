@@ -1,0 +1,81 @@
+/* .parent{
+    background-color: antiquewhite;
+} */
+/* div p{
+    color: brown;
+} */
+ /* div>p{
+    color: blue;
+ } */
+/* 
+ h2+p{
+    color: blueviolet;
+ } */
+  /* h2~p{
+    color: cadetblue;
+  } */
+   /* .parent{
+    background-color: antiquewhite;
+    position: relative;
+    height: 800px;
+   } */
+   /* img{
+    height: 90px;
+    width: 90px;
+   } */
+   .img1{
+    /* position: absolute; */
+    /* top: 40px; */
+    /* margin: 2px; */
+   }
+   .img2{
+    /* position: absolute; */
+    /* top:30px ; */
+    /* z-index: 1; */
+    /* position: sticky; */
+    /* top: 2px; */
+
+    }
+   .img3{
+    /* position: absolute; */
+    /* z-index: 4; */
+    /* position: fixed; */
+   }
+   /* .second{
+    height: 900px;
+    background-color: aquamarine;
+   } */
+
+   /* .parent{
+    background-color: aqua;
+    height: 200px;
+    width:250px;
+    padding: 20px 30px 40px 50px;
+    box-sizing: border-box;
+    top right bottom left
+    margin: 40px;
+    border: 10px solid blue;
+
+   } */
+    .parent{
+        background-color: aquamarine;
+        border: 1px dashed blue;
+        height: 400px;
+        display: flex;
+        /* flex-direction:column;
+        justify-content: center; */
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        /* align-content:end; */
+        justify-items: center;
+       
+    }
+    .child{
+        background-color: teal;
+        height: 50px;
+        width: 50px;
+        margin: 2px;
+    }
+    .child-1{
+        flex-shrink:2;
+    }

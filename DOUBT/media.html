@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle to Square</title>
+    <style>
+         .parent{
+            display: flex;
+            justify-content: flex-end; /* Align rectangle to the right */
+            padding: 20px;
+            width: 300px;
+        }
+
+        .rectangle {
+            width: 300px; /* Rectangle width */
+            height: 100px; /* Rectangle height */
+            background-color: rgb(16, 95, 184); /* Background color */
+            transition: all 2.5s ease 0.5s; /* Smooth transition */
+        }
+
+        .rectangle:hover {
+            width: 100px; /* New width for square */
+            height: 100px; /* Height stays the same */
+            background-color: rgb(95, 184, 47); /* Optional: Change color */
+        }
+        .container > * {
+    outline: 2px dashed white; /* Highlights actual grid cell */
+}
+/* 
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            gap: 10px;
+            background-color: blueviolet;
+            height: 100vh;
+            justify-items: center;
+            border: 1px solid red;
+       
+            
+
+        }
+        .child{
+           background-color: teal;
+           height: 150px;
+           width: 100px;
+        } */
+        .container {
+  display: grid;
+  background-color: aquamarine;
+  grid-template-columns: 200px 200px 200px;
+  gap: 5px;
+  justify-content: center; /* Moves the entire grid */
+  justify-items: center;   /* Aligns items inside their grid cells */
+}
+
+.child {
+  background-color: teal;
+  height: 100px;
+  width: 100px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+    <div class="rectangle"></div>
+
+    </div> -->
+    <div class="container">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

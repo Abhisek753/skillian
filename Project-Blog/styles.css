@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial';
+    line-height: 1.6;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(54, 51, 51);
+    color: white;
+    padding: 1rem 0;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.nav-links a:hover{
+    color: gold;
+}
+.hamburger{
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.toggle-checkbox{
+    display: none;
+}
+@media (max-width:788px){
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        
+    }
+    .toggle-checkbox:checked ~ .nav-links{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+
+}
+/* style for hero section */
+
+
+.hero{
+    height: 100vh;
+    background: url("https://img.freepik.com/free-photo/flat-lay-arrangement-desk-elements-with-copy-space_23-2148513316.jpg?semt=ais_hybrid") no-repeat  center/cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h2{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color:rgb(112, 172, 228);
+    font-size:1rem ;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+.about{
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto ;
+    gap: 20px;
+}
+.about-text{
+    flex: 1;
+    min-width:300px;
+}
+.about-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+.about-text p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px
+}
+.about-image{
+    flex: 1;
+    min-width: 300px;
+}
+.about-image img{
+  max-width: 100%;
+  border-radius: 5%;
+  background-color: white;
+}
+
+/* topic section style */
+
+.topics{
+    padding: 50px 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+.section-title{
+    font-size: 2.5rem;
+margin-bottom: 30px;
+color: #333;
+}
+.topics-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#fff;
+    padding: 20px;
+    border: 20px;
+    border-radius: 8px;
+    height: 100%;
+    text-align: left;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.card p{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.card button{
+    background-color: rgb(112, 172, 228);
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+
+}
+.card button:hover{
+    background-color: #015bbb;
+}
+
+.post{
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.section-title{
+    font-size: 2,5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.posts-grid{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+ gap: 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+.post-card{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+
+}
+.post-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.post-content{
+    padding: 20px;
+}
+.post-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.post-content p{
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+
+}
+.post-content button{
+ background-color: #50639b;
+ padding: 10px 15px;
+ border: none;
+ cursor: pointer;
+ font-size: 1rem;
+ border-radius: 5px;
+
+}
+.post-content button:hover{
+    background-color: #015bbb;
+}
+

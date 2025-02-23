@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgb(185, 126, 47);
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr; /* Define 3 equal columns */
+            grid-template-rows: 100px 100px 100px 100px; /* Define consistent row heights */
+            grid-template-areas: 'sidebar item4 item4 .'
+                                 'sidebar item3 item3 .'
+                                 'sidebar item2 item2 item2';
+            gap: 5px;
+        }
+        /* .item1{
+            grid-area: 2 / 2 / 3 / 3;
+        } */
+        
+        .item1 {
+            grid-area: sidebar;
+        }
+        .item2 {
+            grid-area: item2;
+        }
+        .item3 {
+            grid-area: item3;
+        }
+        .item4 {
+            grid-area: item4;
+        }
+        .item {
+            background-color: rgb(16, 26, 95);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item-1</div>
+        <div class="item item2">Item-2</div>
+        <div class="item item3">Item-3</div>
+        <div class="item item4">Item-4</div>
+        <!-- <div class="item ">Item-5</div>
+        <div class="item ">Item-6</div>
+        <div class="item ">Item-7</div>
+        <div class="item ">Item-8</div> -->
+    </div>
+</body>
+</html>
