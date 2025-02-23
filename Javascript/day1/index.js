@@ -69,6 +69,6 @@
 // }
 
 // (10<5)?console.log("print true"):console.log("print false");
-let a="4";
-let b=10;
-console.log(Number(a))
+// let a="4";
+// let b=10;
+// console.log(Number(a))
