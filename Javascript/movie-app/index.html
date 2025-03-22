@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Movie App</div>
+      <input type="text" id="search" placeholder="Search Movies.." />
+      <select>
+        <option value="">Sort By</option>
+        <option value="">Year Ascending</option>
+        <option value="">Year Descending</option>
+      </select>
+    </nav>
+    <!-- sub sidebar -->
+    <div class="sub-sidebar">
+      <span id="movie-count">Movie :0</span>
+      <button>+ Add Movie</button>
+    </div>
+
+    <!-- movies container -->
+    <div id="movie-list">
+      <div id="movie-model" class="model">
+        <div class="model-content">
+          <h2>Add New Movie</h2>
+          <form>
+            <input type="text" placeholder="Title" />
+            <input type="text" placeholder="Year" />
+            <input type="text" placeholder="Genre" />
+            <input type="text" placeholder="Poser Url" />
+            <button type="submit"> Add Movie</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

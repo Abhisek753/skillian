@@ -184,4 +184,26 @@
 //   console.log("hellow world")
 // };
 // fun()
+// let val1="test"
+// let val2=val1;
+// val2="durga";
+// console.log(val1)
+// console.log(val2)
 
+// var test1={data:4,name:"arjun"}
+// var test2=test1;
+// console.log(test1)
+// console.log(test2)
+
+// var name="arjuna";
+// name[3]="y"
+// console.log(name)
+// var val=["ram","shyam","akbar"];
+// val[2]="bhopa";
+// console.log(val,"val");
+// console.log(val)
+//  function fun(){
+//   console.log("test")
+// }
+// // console.log(val)
+// fun()
