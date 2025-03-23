@@ -25,7 +25,7 @@ function displayMovies(movies){
          <p>Genre: ${movie.genre}</p>
          
         </div>
-        <button >Delete</button>
+        <button onClick="deleteMovie(${movie.id})" >Delete</button>
         `;
         movieList.appendChild(movieCard);
     });
@@ -34,3 +34,46 @@ function displayMovies(movies){
 // Initial Fetch
 fetchMovie()
 // intersection observer
+
+async function deleteMovie(id){
+     await fetch(`${API_URL}/${id}`,{
+       method:"DELETE" 
+    });
+    
+    fetchMovie()
+}
+
+async function sortMovies(){
+    let sortBy=document.getElementById("sort").value;
+    console.log(sortBy);
+    let res=await fetch(API_URL);
+    let movies=await res.json();
+    if(sortBy=="asc"){
+        movies.sort((a,b)=>a.year-b.year);
+    }else if(sortBy==="desc"){
+        movies.sort((a,b)=>b.year-a.year);
+
+    }
+   displayMovies(movies)
+}
+// Search movies
+
+async function searchMovies() {
+    let searchValue=document.getElementById("search").value.toLowerCase();
+    // console.log(searchValue)
+    let res=await fetch(API_URL);
+    let movies=await res.json();
+    let filterMovies=movies.filter(
+        movie=>movie.title.toLowerCase().includes(searchValue)
+
+    );
+  displayMovies(filterMovies);
+};
+
+function showModal(){
+    document.getElementById("movie-model").style.display="flex";
+}
+function hideModal(){
+    document.getElementById("movie-model").style.display="none";
+
+}
