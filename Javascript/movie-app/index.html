@@ -26,13 +26,15 @@
     <div id="movie-list"></div>
     <div id="movie-model" class="model">
       <div class="model-content">
-        <h2>Add New Movie</h2>
-        <span onclick="hideModal()">&#x2715</span>
-        <form>
-          <input type="text" placeholder="Title" />
-          <input type="text" placeholder="Year" />
-          <input type="text" placeholder="Genre" />
-          <input type="text" placeholder="Poser Url" />
+        <div id="modal-head">
+          <span>Add New Movie</span>
+          <span class="close" onclick="hideModal()">&#x2715;</span>
+      </div>
+        <form id="movie-form">
+          <input id="movie-title" type="text" placeholder="Title" />
+          <input id="movie-year" type="text" placeholder="Year" />
+          <input id="movie-genre" type="text" placeholder="Genre" />
+          <input id="movie-poster" type="text" placeholder="Poser Url" />
           <button type="submit"> Add Movie</button>
         </form>
       </div>

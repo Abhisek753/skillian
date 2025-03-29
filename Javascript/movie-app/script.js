@@ -77,3 +77,21 @@ function hideModal(){
     document.getElementById("movie-model").style.display="none";
 
 }
+
+document.getElementById("movie-form").addEventListener("submit",async function(e){
+    e.preventDefault();
+    let newMovie={
+        title:document.getElementById("movie-title").value,
+        year:document.getElementById("movie-year").value,
+        genre:document.getElementById("movie-genre").value,
+        poster:document.getElementById("movie-poster").value,
+        
+    }
+    let res=await fetch(API_URL,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(newMovie)
+    })
+    console.log(res)
+    console.log(newMovie,"movie value 1111")
+})
