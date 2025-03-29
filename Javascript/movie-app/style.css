@@ -133,6 +133,10 @@ form button{
     margin: 10px;
     font-size: 18px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    width: 80%;
+    display: block;
 
 }
 .movie-info p{

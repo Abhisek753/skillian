@@ -2,14 +2,14 @@
   "deletedItems": [],
   "movies": [
     {
-      "id": "9",
+      "id": "1",
       "title": "Spirited Away",
       "year": "2001",
       "genre": "Animation",
       "poster": "https://img.freepik.com/premium-psd/torn-paper-photo-effect-poster-design_528542-1829.jpg?semt=ais_hybrid"
     },
     {
-      "id": "10",
+      "id": "2",
       "title": "Parasite",
       "delete": true,
       "year": "2019",
@@ -17,74 +17,207 @@
       "poster": "https://i.pinimg.com/236x/21/de/51/21de51757026482ea9d87b34f987f5f3.jpg"
     },
     {
-      "id": "11",
+      "id": "3",
       "title": "Avengers: Endgame",
       "year": "2019",
       "genre": "Action",
       "poster": "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/66a4263d01a185d5ea22eeec_6408f6e7b5811271dc883aa8_batman-min.png"
     },
     {
-      "id": "12",
+      "id": "4",
       "title": "Jurassic Park",
       "year": "1993",
       "genre": "Adventure",
       "poster": "https://m.media-amazon.com/images/I/91zTlD7AY1L.jpg"
     },
     {
-      "id": "14",
+      "id": "5",
       "title": "The Shawshank Redemption",
       "year": "1994",
       "genre": "Drama",
       "poster": "https://i.pinimg.com/236x/21/de/51/21de51757026482ea9d87b34f987f5f3.jpg"
     },
     {
-      "id": "15",
+      "id": "6",
       "title": "Batman Begins",
       "year": "2005",
       "genre": "Action",
       "poster": "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/66a4263d01a185d5ea22eeec_6408f6e7b5811271dc883aa8_batman-min.png"
     },
     {
-      "id": "16",
+      "id": "7",
       "title": "Lord of the Rings",
       "year": "2001",
       "genre": "Fantasy",
       "poster": "https://m.media-amazon.com/images/I/91zTlD7AY1L.jpg"
     },
     {
-      "id": "17",
+      "id": "8",
       "title": "Seven",
       "year": "1995",
       "genre": "Thriller",
       "poster": "https://img.freepik.com/premium-psd/torn-paper-photo-effect-poster-design_528542-1829.jpg?semt=ais_hybrid"
     },
     {
-      "id": "18",
-      "title": "Memento",
-      "year": "2000",
-      "genre": "Thriller",
-      "poster": "https://i.pinimg.com/236x/21/de/51/21de51757026482ea9d87b34f987f5f3.jpg"
-    },
-    {
-      "id": "19",
+      "id": "10",
       "title": "Guardians of the Galaxy",
       "year": "2014",
       "genre": "Sci-Fi",
       "poster": "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/66a4263d01a185d5ea22eeec_6408f6e7b5811271dc883aa8_batman-min.png"
     },
     {
-      "id": "b126",
-      "title": "test",
-      "year": "2025",
-      "genre": "Test",
-      "poster": "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/66a4263d01a185d5ea22eeec_6408f6e7b5811271dc883aa8_batman-min.png"
+      "id": "11",
+      "title": "Pathan",
+      "year": "2023",
+      "genre": "Action",
+      "poster": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/c/b/d/small-pathan-shah-rukh-khan-bollywood-hindi-movie-poster-small-original-imagmt3dgxh7avyg.jpeg?q=20&crop=false"
     },
     {
-      "id": "5f82",
-      "title": "test 2",
-      "year": "2999",
-      "genre": "test g",
-      "poster": "data:image/jpeg;base64,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"
+      "id": "12",
+      "title": "Alien Romulus",
+      "year": "2024",
+      "genre": "Sci-Fi",
+      "poster": "https://creativereview.imgix.net/content/uploads/2024/12/AlienRomulus-scaled.jpg?auto=compress,format&q=60&w=729&h=1080"
+    },
+    {
+      "id": "13",
+      "title": "Movie 13",
+      "year": "2025",
+      "genre": "Genre 13",
+      "poster": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/d3130c112617081.60181f67660c8.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Movie 14",
+      "year": "2026",
+      "genre": "Genre 14",
+      "poster": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/d3130c112617081.60181f67660c8.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Sci-Fi",
+      "poster": "https://m.media-amazon.com/images/I/51zUbui+gbL.jpg"
+    },
+    {
+      "id": "16",
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Sci-Fi",
+      "poster": "https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "17",
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "poster": "https://m.media-amazon.com/images/I/71pox3VPPQL._AC_SY679_.jpg"
+    },
+    {
+      "id": "18",
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "poster": "https://m.media-amazon.com/images/I/71VP3lsxiAL._AC_SY679_.jpg"
+    },
+    {
+      "id": "19",
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Sci-Fi",
+      "poster": "https://m.media-amazon.com/images/I/51EG732BV3L.jpg"
+    },
+    {
+      "id": "20",
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "poster": "https://m.media-amazon.com/images/I/71I0vAAT6aL._AC_SY679_.jpg"
+    },
+    {
+      "id": "21",
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "Crime",
+      "poster": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
+    },
+    {
+      "id": "22",
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Biography",
+      "poster": "https://m.media-amazon.com/images/I/51k0qaD98JL.jpg"
+    },
+    {
+      "id": "23",
+      "title": "The Green Mile",
+      "year": "1999",
+      "genre": "Fantasy",
+      "poster": "https://m.media-amazon.com/images/I/81nwnHTxS0L._AC_SY679_.jpg"
+    },
+    {
+      "id": "24",
+      "title": "Forrest Gump",
+      "year": "1994",
+      "genre": "Drama",
+      "poster": "https://m.media-amazon.com/images/I/61K5fA1dVPL._AC_SY679_.jpg"
+    },
+    {
+      "id": "25",
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Action",
+      "poster": "https://m.media-amazon.com/images/I/81VR1IfWnAL._AC_SY679_.jpg"
+    },
+    {
+      "id": "26",
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "poster": "https://m.media-amazon.com/images/I/71KJ1s9H3FL._AC_SY679_.jpg"
+    },
+    {
+      "id": "27",
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "poster": "https://m.media-amazon.com/images/I/81bDPI5YreL._AC_SY679_.jpg"
+    },
+    {
+      "id": "28",
+      "title": "Saving Private Ryan",
+      "year": "1998",
+      "genre": "War",
+      "poster": "https://m.media-amazon.com/images/I/91BIdODBvFL._AC_SY679_.jpg"
+    },
+    {
+      "id": "29",
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "poster": "https://m.media-amazon.com/images/I/91tFnqmqibL._AC_SY679_.jpg"
+    },
+    {
+      "id": "30",
+      "title": "The Departed",
+      "year": "2006",
+      "genre": "Crime",
+      "poster": "https://m.media-amazon.com/images/I/71jZbP8CjPL._AC_SY679_.jpg"
+    },
+    {
+      "id": "31",
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "poster": "https://m.media-amazon.com/images/I/61Qw8mLaOXL._AC_SY679_.jpg"
+    },
+    {
+      "id": "32",
+      "title": "The Prestige",
+      "year": "2006",
+      "genre": "Mystery",
+      "poster": "https://m.media-amazon.com/images/I/81m0HqQScGL._AC_SY679_.jpg"
     }
   ]
 }

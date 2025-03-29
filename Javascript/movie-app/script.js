@@ -1,9 +1,24 @@
 const API_URL="http://localhost:3000/movies"
 
-async function fetchMovie() {
-    let res=await fetch(API_URL);
+let currentPage=1;
+let perPage=12;
+let totalPage=1;
+
+
+
+async function fetchMovie(page=1) {
+    // let res=await fetch(API_URL);
+    // let movies=await res.json()
+    // displayMovies(movies)
+    
+    let res=await fetch(`${API_URL}?_page=${page}&_per_page=${perPage}`);
+    
     let movies=await res.json()
-    displayMovies(movies)
+   
+    totalPage=movies.pages
+
+    displayMovies(movies.data)
+    updatePaginationButton()
 };
 
 function displayMovies(movies){
@@ -34,6 +49,36 @@ function displayMovies(movies){
 // Initial Fetch
 fetchMovie()
 // intersection observer
+
+// pagination
+document.getElementById("move-pages").innerHTML=`
+<div class="pagination">
+<button id="preBtn"  onClick="prePage()">Previous</button>
+<span id="pageIndecator">Pages ${totalPage}</span>
+<button id="nextBtn" onClick="nextPage()" >Next</button>
+ 
+</div>
+`
+
+function nextPage(){
+    if(currentPage<totalPage){
+        currentPage++;
+        fetchMovie(currentPage)
+    }
+}
+
+function prePage(){
+    if(currentPage>1){
+        currentPage--;
+        fetchMovie(currentPage)
+    }
+}
+
+function updatePaginationButton(){
+    document.getElementById("preBtn").disabled=currentPage===1;
+    document.getElementById("nextBtn").disabled=currentPage===totalPage;
+    document.getElementById("pageIndecator").textContent=`Page ${currentPage} of ${totalPage}`;
+}
 
 async function deleteMovie(id){
      await fetch(`${API_URL}/${id}`,{
@@ -95,3 +140,4 @@ document.getElementById("movie-form").addEventListener("submit",async function(e
     console.log(res)
     console.log(newMovie,"movie value 1111")
 })
+
