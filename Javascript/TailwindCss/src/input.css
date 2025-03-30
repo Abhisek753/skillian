@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.btn-class{
+    @apply  text-gray-600 hover:cursor-pointer text-red-700
+}
