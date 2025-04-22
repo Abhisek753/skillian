@@ -35,17 +35,6 @@ console.log("dummy log printed")
 
 
 
-useEffect(()=>{
-    //timer inertval
-   const interval=setInterval(()=>{
-   setCount((pre)=>pre+1);
-   },1000)
-    return ()=>{
-
-     clearInterval(interval)
-    }
-
-   },[count])
 
 
 
