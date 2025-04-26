@@ -1,35 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import NavbarParent from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import Home from './components/Home';
-import ParentComponent from './components/Props/ParentComponent';
-import Child from './components/Props/Child';
-import Combine from './components/Props/Index';
-import Dummy from './Dummy';
-import Mycomponent from './components/State/Mycomponent';
-import Parentcomponent from './components/PropsData/Parentcomponent';
+import React, { useCallback, useState } from 'react'
+import Child from './components/optimise/Child';
+import Cleanup from './components/cleaup/Cleanup';
+import CleanupSame from './components/cleaup/CleanupSame';
+import Focus from './components/optimise/Focus';
 
-function App() {
-  let data="bled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin"
+const App = () => {
+  const [count,setCount]=useState(0);
+  console.log("parent is rendering")
+  const handleClick=()=>{
+   console.log("button is clicked")
+  }
+  // const handleClick=useCallback(()=>{
+  //    console.log("parent func")
+  // },[])
   return (
-    <div className="App">
-      {/* <h2>Kusumlata</h2> */}
-      {/* <NavbarParent/>
-    
-
-       <div style={{display:"flex"}}>
-      <Sidebar/>
-       <Home/>
-       </div> */}
-     {/* <Combine/>
-     <Dummy discription={data}/> */}
-     {/* <Mycomponent/> */}
-
-
-     <Parentcomponent/>
+    <div>
+      {/* <button className='bg-blue-500 mb-8' onClick={()=>setCount(count+1)}>increase</button> */}
+      {/* <Child  handleClick={handleClick}/> */}
+      {/* <Cleanup/> */}
+      <CleanupSame/>
+      {/* <Focus/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
