@@ -1,26 +1,36 @@
 import React, { useCallback, useState } from 'react'
-import Child from './components/optimise/Child';
-import Cleanup from './components/cleaup/Cleanup';
-import CleanupSame from './components/cleaup/CleanupSame';
-import Focus from './components/optimise/Focus';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import Contact from './components/Contact'
+import About from "./components/About"
+import SinglePage from './components/SinglePage'
 
 const App = () => {
-  const [count,setCount]=useState(0);
-  console.log("parent is rendering")
-  const handleClick=()=>{
-   console.log("button is clicked")
-  }
-  // const handleClick=useCallback(()=>{
-  //    console.log("parent func")
-  // },[])
+
   return (
+    <BrowserRouter>
     <div>
-      {/* <button className='bg-blue-500 mb-8' onClick={()=>setCount(count+1)}>increase</button> */}
-      {/* <Child  handleClick={handleClick}/> */}
-      {/* <Cleanup/> */}
-      <CleanupSame/>
-      {/* <Focus/> */}
+    <div style={{border:"2px solid black"}}>
+    <ol>
+        <li>
+          <a to="/home">Home</a>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ol>
     </div>
+      <Routes>
+        <Route path='/home' element={<Home/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/about/:id' element={<SinglePage/>} />
+      </Routes>
+    </div>
+    </BrowserRouter>
   )
 }
 
