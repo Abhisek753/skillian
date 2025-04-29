@@ -4,8 +4,14 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import About from "./components/About"
 import SinglePage from './components/SinglePage'
+import ProtectedRouteAdmin from './Routes/ProtectedRouteAdmin'
+import ProtectedRouteUser from './Routes/ProtectedRouteUser'
+import Login from './Pages/Login'
 
 const App = () => {
+  
+  // localStorage.setItem("isAuthenticated",true)
+  // localStorage.setItem("role","user")
 
   return (
     <BrowserRouter>
@@ -13,10 +19,10 @@ const App = () => {
     <div style={{border:"2px solid black"}}>
     <ol>
         <li>
-          <a to="/home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact/:id/products?category=shoes&page=2">Contact</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
@@ -25,8 +31,18 @@ const App = () => {
     </div>
       <Routes>
         <Route path='/home' element={<Home/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/about' element={<About/>} />
+        <Route path='/login' element={<Login/>} />
+
+        <Route path='/contact/:id/products' element={
+          <ProtectedRouteUser>
+          <Contact/>
+          </ProtectedRouteUser>
+          } />
+        <Route path='/about' element={
+          <ProtectedRouteAdmin  >
+          <About/>
+          </ProtectedRouteAdmin>
+          } />
         <Route path='/about/:id' element={<SinglePage/>} />
       </Routes>
     </div>
