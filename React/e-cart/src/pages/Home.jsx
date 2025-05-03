@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Home = () => {
+  console.log("555555")
   return (
-    <div>Home</div>
+    <div className='font-4xl'>Home</div>
   )
 }
 

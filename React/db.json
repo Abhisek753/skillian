@@ -1,0 +1,206 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 14 Pro",
+      "category": "Mobile",
+      "price": 1199,
+      "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png",
+      "description": "Experience the future with the iPhone 14 Pro, featuring an advanced A16 Bionic chip and ProMotion display. Capture stunning photos with the 48MP camera system."
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23",
+      "category": "Mobile",
+      "price": 999,
+      "image": "https://www.91-img.com/gallery_images_uploads/3/d/3d5328b6ff914c3c486c5d30f2d17937312afac9.jpg?tr=h-271,c-at_max,q-60,pr-true",
+      "description": "Sleek and powerful, the Galaxy S23 comes with a top-tier Snapdragon processor and ultra-clear AMOLED screen. Ideal for gaming and photography."
+    },
+    {
+      "id": 21,
+      "name": "iPhone 14 max Pro",
+      "category": "Mobile",
+      "price": 1799,
+      "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png",
+      "description": "Large display and pro-level features make the iPhone 14 Max Pro perfect for creators. Advanced image processing and battery life to match."
+    },
+    {
+      "id": 22,
+      "name": "iPhone 14 lite",
+      "category": "Mobile",
+      "price": 1099,
+      "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png",
+      "description": "A lighter, budget-friendly version of iPhone 14. Delivers fast performance with essential features in a stylish package."
+    },
+    {
+      "id": 3,
+      "name": "OnePlus 11",
+      "category": "Mobile",
+      "price": 799,
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708670974/Croma%20Assets/Communication/Mobiles/Images/268761_0_ptnhsb.png",
+      "description": "The OnePlus 11 offers flagship performance at a competitive price. Enjoy smooth multitasking and a fast charging experience."
+    },
+    {
+      "id": 4,
+      "name": "Google Pixel 7",
+      "category": "Mobile",
+      "price": 699,
+      "image": "https://www.dxomark.com/wp-content/uploads/medias/post-126764/Google-Pixel-7-Pro_featured-image-packshot-review.jpg",
+      "description": "Known for its excellent camera and clean Android experience, the Pixel 7 delivers fast updates and AI-powered features."
+    },
+    {
+      "id": 5,
+      "name": "MacBook Air M2",
+      "category": "Laptop",
+      "price": 1299,
+      "image": "https://www.cnet.com/a/img/resize/aba646bbfefdaae2a6aed6d516512f33e3b3a0c9/hub/2022/07/12/995173ef-de01-45be-a714-c5d581f4bd5c/macbook-air-m2-2022-2.jpg?auto=webp&width=1200",
+      "description": "The MacBook Air M2 is ultra-thin, lightweight, and incredibly powerful. Perfect for students and professionals on the go."
+    },
+    {
+      "id": 6,
+      "name": "Dell XPS 13",
+      "category": "Laptop",
+      "price": 1099,
+      "image": "https://serverbazar.in/wp-content/uploads/2024/11/dell-xps-9340.jpg",
+      "description": "Sleek design meets high performance in the Dell XPS 13. Enjoy a vibrant InfinityEdge display and fast SSD storage."
+    },
+    {
+      "id": 7,
+      "name": "HP Spectre x360",
+      "category": "Laptop",
+      "price": 999,
+      "image": "https://images.fonearena.com/blog/wp-content/uploads/2024/01/HP-Spectre-x360-16-inch-2-in-1-1024x509.jpeg",
+      "description": "This 2-in-1 laptop combines premium looks with flexibility. Convert it into a tablet for media, note-taking, and more."
+    },
+    {
+      "id": 8,
+      "name": "Lenovo Yoga 7i",
+      "category": "Laptop",
+      "price": 899,
+      "image": "https://i.ytimg.com/vi/DarrWAa1Iek/maxresdefault.jpg",
+      "description": "Lenovo Yoga 7i offers great versatility with its 360-degree hinge. Smooth performance for productivity and entertainment."
+    },
+    {
+      "id": 9,
+      "name": "Sony WH-1000XM5",
+      "category": "Headphones",
+      "price": 399,
+      "image": "https://preview.redd.it/wh-1000xm5-review-after-2-years-the-good-the-bad-and-why-i-v0-iepcicejcg6e1.jpg?width=1080&crop=smart&auto=webp&s=56cb8c7f104ea9b8762826b4417b22f89c618773",
+      "description": "Industry-leading noise cancellation with superior sound quality. The XM5 is ideal for travelers and audiophiles alike."
+    },
+    {
+      "id": 10,
+      "name": "Bose QC45",
+      "category": "Headphones",
+      "price": 379,
+      "image": "https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45_PDP_Ecom-Gallery-W02.png/_jcr_content/renditions/cq5dam.web.320.320.png",
+      "description": "Enjoy comfort and clear sound with Bose QC45 headphones. Designed for long hours of listening with active noise cancellation."
+    },
+    {
+      "id": 11,
+      "name": "JBL Tune 710BT",
+      "category": "Headphones",
+      "price": 99,
+      "image": "https://m.media-amazon.com/images/S/aplus-media/sota/32adaa24-7739-4efe-a2c3-ff761c7d90ce.__CR0,0,300,300_PT0_SX300_V1___.png",
+      "description": "Affordable wireless headphones with JBL Pure Bass sound. Lightweight design and long battery life for daily use."
+    },
+    {
+      "id": 12,
+      "name": "Apple AirPods Pro",
+      "category": "Headphones",
+      "price": 249,
+      "image": "https://www.apple.com/newsroom/images/2024/09/apple-introduces-airpods-4/article/Apple-AirPods-hero-240909_big.jpg.large.jpg",
+      "description": "With active noise cancellation and spatial audio, AirPods Pro deliver a premium wireless audio experience in a compact form."
+    },
+    {
+      "id": 13,
+      "name": "Samsung Galaxy Watch 5",
+      "category": "Accessories",
+      "price": 299,
+      "image": "https://images.samsung.com/is/image/samsung/assets/in/galaxy-watch5/feature/galaxy-watch5-camera-controller-display-mo.png?$ORIGIN_PNG$",
+      "description": "Track your health, fitness, and notifications with the stylish Galaxy Watch 5. Long battery life and water resistance included."
+    },
+    {
+      "id": 14,
+      "name": "Apple Watch SE",
+      "category": "Accessories",
+      "price": 279,
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/44-nc-aluminum-silver-sport-band-denim-se?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1724624315212",
+      "description": "Affordable and powerful, the Apple Watch SE offers essential features like heart rate tracking and fitness monitoring."
+    },
+    {
+      "id": 15,
+      "name": "Logitech MX Master 3",
+      "category": "Accessories",
+      "price": 99,
+      "image": "https://i.rtings.com/assets/products/UPOdtAiR/logitech-mx-master-3/design-large.jpg?format=auto",
+      "description": "A productivity beast, the MX Master 3 offers precision, comfort, and customizable buttons. Great for coders and designers."
+    },
+    {
+      "id": 16,
+      "name": "Anker Power Bank 20K",
+      "category": "Accessories",
+      "price": 49,
+      "image": "https://gamersjo.com/manage/assets/uploads/products/anker-power-bank-20k-30w-a1384h11-black-0.jpg",
+      "description": "Never run out of power with this 20,000mAh Anker power bank. Dual output for charging multiple devices on the go."
+    },
+    {
+      "id": 17,
+      "name": "Canon EOS R10",
+      "category": "Camera",
+      "price": 979,
+      "image": "https://img.youtube.com/vi/eMs-goYrBA4/0.jpg",
+      "description": "Capture sharp and vivid photos with the Canon EOS R10. Lightweight mirrorless design with high-speed autofocus."
+    },
+    {
+      "id": 18,
+      "name": "Sony ZV-E10",
+      "category": "Camera",
+      "price": 899,
+      "image": "https://gppro.in/wp-content/uploads/2024/11/SONY-DIGITAL-CAMERA-ZV-E10L-WITH-16-50mm-KIT-GP002600-1.jpg",
+      "description": "Tailored for vloggers, the Sony ZV-E10 delivers top-quality 4K video and interchangeable lens flexibility in a compact build."
+    },
+    {
+      "id": 19,
+      "name": "Nikon Z30",
+      "category": "Camera",
+      "price": 799,
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/dslr-camera/1/w/r/z30-20-9-z30-nikon-original-imah3sczdpjs3nhq.jpeg?q=90&crop=false",
+      "description": "Compact and beginner-friendly, the Nikon Z30 is great for content creators. Delivers sharp video and smooth performance."
+    },
+    {
+      "id": 20,
+      "name": "Fujifilm X-S10",
+      "category": "Camera",
+      "price": 999,
+      "image": "https://m.media-amazon.com/images/I/71CRCxFcr5L.jpg",
+      "description": "Fujifilm X-S10 combines retro style with modern tech. Ideal for hybrid shooters who want quality and creative control."
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23",
+      "category": "Mobile",
+      "price": 999,
+      "image": "https://www.91-img.com/gallery_images_uploads/3/d/3d5328b6ff914c3c486c5d30f2d17937312afac9.jpg?tr=h-271,c-at_max,q-60,pr-true"
+    },
+    {
+      "id": 19,
+      "name": "Nikon Z30",
+      "category": "Camera",
+      "price": 799,
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/dslr-camera/1/w/r/z30-20-9-z30-nikon-original-imah3sczdpjs3nhq.jpeg?q=90&crop=false"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23",
+      "category": "Mobile",
+      "price": 999,
+      "image": "https://www.91-img.com/gallery_images_uploads/3/d/3d5328b6ff914c3c486c5d30f2d17937312afac9.jpg?tr=h-271,c-at_max,q-60,pr-true",
+      "description": "Sleek and powerful, the Galaxy S23 comes with a top-tier Snapdragon processor and ultra-clear AMOLED screen. Ideal for gaming and photography."
+    }
+  ]
+}
