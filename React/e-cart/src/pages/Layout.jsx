@@ -5,9 +5,9 @@ import Footer from '../components/Footer'
 const Layout = ({children}) => {
   return (
     <div>
-     
+        
         <Navbar/>
-       <main>
+       <main className='pt-16'>
         {children}
        </main>
        <Footer/>

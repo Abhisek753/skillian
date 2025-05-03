@@ -175,6 +175,14 @@
       "price": 999,
       "image": "https://m.media-amazon.com/images/I/71CRCxFcr5L.jpg",
       "description": "Fujifilm X-S10 combines retro style with modern tech. Ideal for hybrid shooters who want quality and creative control."
+    },
+    {
+      "id": 20,
+      "name": "Fujifilm X-S10",
+      "category": null,
+      "price": 999,
+      "image": "https://m.media-amazon.com/images/I/71CRCxFcr5L.jpg",
+      "description": "Fujifilm X-S10 combines retro style with modern tech. Ideal for hybrid shooters who want quality and creative control."
     }
   ],
   "cart": [
