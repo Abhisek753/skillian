@@ -7,6 +7,9 @@ import SinglePage from './components/SinglePage'
 import ProtectedRouteAdmin from './Routes/ProtectedRouteAdmin'
 import ProtectedRouteUser from './Routes/ProtectedRouteUser'
 import Login from './Pages/Login'
+import Dashboard from './Pages/Dashboard'
+import Profile from './Pages/Profile'
+import Settings from './Pages/Settings'
 
 const App = () => {
   
@@ -27,6 +30,9 @@ const App = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
       </ol>
     </div>
       <Routes>
@@ -44,6 +50,10 @@ const App = () => {
           </ProtectedRouteAdmin>
           } />
         <Route path='/about/:id' element={<SinglePage/>} />
+        <Route path='/dashboard' element={<Dashboard/>} >
+           <Route path='profile' element={<Profile/>} />
+           <Route path='settings' element={<Settings/>} />
+        </Route>
       </Routes>
     </div>
     </BrowserRouter>
