@@ -12,6 +12,7 @@ const fetchProducts=async()=>{
 
   }catch(err){
     console.log(err)
+    
   }
 
 }
