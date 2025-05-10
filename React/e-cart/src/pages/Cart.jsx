@@ -1,9 +1,10 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Cart = () => {
 const [cartItems,setCartItems]=useState([])
+const navigate=useNavigate()
 
 const fetchCartItems= async()=>{
   try{
@@ -22,6 +23,11 @@ const removeFromCart=async(id)=>{
   console.log("Faild to delete cart item",error)
  }
 }
+const handlePayment=()=>{
+   navigate("/payment",{state:{totalPrice}})
+}
+
+const totalPrice=cartItems.reduce((total,item)=>total+Number(item.price),0)
 
 useEffect(()=>{
   fetchCartItems()
@@ -46,6 +52,15 @@ useEffect(()=>{
             ))
           ):"Your Cart is empty" }
        </div>
+       {cartItems.length>0 &&(
+        <div className='mt-8 border-t pt-6 flex flex-col md:flex-row justify-between items-center' >
+          <p className='text-2xl font-semibold'>Total: ${totalPrice}</p>
+          <button onClick={handlePayment} className='mt-4 md:mt-0 bg-green-600 hover:bg-green-700 text-white font-bold  rounded px-6 py-2 '>
+            Proceed to Payment 💳
+          </button>
+
+        </div>
+       )}
     </div>
   )
 }

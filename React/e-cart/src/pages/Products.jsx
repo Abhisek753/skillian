@@ -24,11 +24,18 @@ const groupProducts=products.reduce((acc,product)=>{
 },{})
 console.log(groupProducts)
 
-useEffect(()=>{
-  fetchProducts()
-},[])
+
  const addToCart= async(product)=>{
   try{
+    const res=await axios.get("http://localhost:3001/cart");
+    console.log("response", res);
+
+    const exists=res.data.some(item=>item.id===product.id);
+    if(exists){
+      alert("Item already in the cart");
+      return
+    }
+ 
     await axios.post("http://localhost:3001/cart",product);
     alert("Added product to cart")
 
@@ -49,6 +56,9 @@ useEffect(()=>{
   
  }
 
+ useEffect(()=>{
+  fetchProducts()
+},[])
   return (
     <div className='p-4 space-y-8 mt-8'>
       {

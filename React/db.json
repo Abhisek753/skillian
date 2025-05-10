@@ -187,12 +187,12 @@
   ],
   "cart": [
     {
-      "id": "7",
-      "name": "HP Spectre x360",
-      "category": "Laptop",
-      "price": 999,
-      "image": "https://images.fonearena.com/blog/wp-content/uploads/2024/01/HP-Spectre-x360-16-inch-2-in-1-1024x509.jpeg",
-      "description": "This 2-in-1 laptop combines premium looks with flexibility. Convert it into a tablet for media, note-taking, and more."
+      "id": "19",
+      "name": "Nikon Z30",
+      "category": "Camera",
+      "price": 799,
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/dslr-camera/1/w/r/z30-20-9-z30-nikon-original-imah3sczdpjs3nhq.jpeg?q=90&crop=false",
+      "description": "Compact and beginner-friendly, the Nikon Z30 is great for content creators. Delivers sharp video and smooth performance."
     },
     {
       "id": "19",
@@ -203,12 +203,12 @@
       "description": "Compact and beginner-friendly, the Nikon Z30 is great for content creators. Delivers sharp video and smooth performance."
     },
     {
-      "id": "21",
-      "name": "iPhone 14 max Pro",
+      "id": "2",
+      "name": "Samsung Galaxy S23",
       "category": "Mobile",
-      "price": 1799,
-      "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png",
-      "description": "Large display and pro-level features make the iPhone 14 Max Pro perfect for creators. Advanced image processing and battery life to match."
+      "price": 999,
+      "image": "https://www.91-img.com/gallery_images_uploads/3/d/3d5328b6ff914c3c486c5d30f2d17937312afac9.jpg?tr=h-271,c-at_max,q-60,pr-true",
+      "description": "Sleek and powerful, the Galaxy S23 comes with a top-tier Snapdragon processor and ultra-clear AMOLED screen. Ideal for gaming and photography."
     }
   ],
   "favorites": [

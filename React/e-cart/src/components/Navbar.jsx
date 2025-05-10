@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import {useTheme} from "../context/ThemeContext"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const {toggleTheme,theme}=useTheme()
+   
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 ">
+    <nav className="fixed top-0 left-0 w-full bg-white text-black shadow-md z-50 ">
       <div className="max-w-6xl mx-auto px-4 ">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -29,6 +30,8 @@ const Navbar = () => {
             <Link to="/cart" className="text-gray-700 hover:text-blue-600">Cart</Link>
             <Link to="/payment" className="text-gray-700 hover:text-blue-600">Payment</Link>
             <Link to="/favourite" className="text-gray-700 hover:text-blue-600">Favorite</Link>
+            <Link to="/favourite" className="text-gray-700 hover:text-blue-600">Favorite</Link>
+            <button onClick={toggleTheme} >{theme=="light"?"🌙Dark":"☀️Light"}</button>
           </div>
         </div>
 
