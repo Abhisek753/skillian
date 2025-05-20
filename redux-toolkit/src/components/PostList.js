@@ -15,7 +15,13 @@ const PostList = () => {
 
     <div>
        <h2>Post Listing</h2>
-       
+         {loading && <h3>Loading...</h3>}
+         {error && <h3>Error: {error}</h3>}
+         <ul>
+             {posts.map(post => (
+                 <li key={post.id}>{post.title}</li>
+             ))}
+         </ul>
     </div>
   )
 }
